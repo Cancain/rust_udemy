@@ -1,0 +1,1 @@
+/home/tomas/Rust/the_rust_programming_language_udemy/section_2/2/types_and_variables/target/debug/types_and_variables: /home/tomas/Rust/the_rust_programming_language_udemy/section_2/2/types_and_variables/src/main.rs
