@@ -32,6 +32,20 @@ fn operators() {
 }
 
 fn scope_and_shadowing() {
+    let a = 123;
+
+    {
+        let b = 456;
+        let a = 777;
+        println!("inside, b = {}", b);
+        println!("inside, a = {}", a);
+    }
+
+    println!("outside, a = {}", a);
+    // println!("b = {}", b);
+}
+
+fn fundamental_data_types() {
     //unsigned
     let a: u8 = 123; //8bits
     println!("a = {}", a);
@@ -71,5 +85,5 @@ fn scope_and_shadowing() {
 }
 
 fn main() {
-    operators();
+    scope_and_shadowing();
 }
