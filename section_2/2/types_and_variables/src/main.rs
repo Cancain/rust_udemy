@@ -1,5 +1,8 @@
 use ::std::mem;
 
+const MEANING_OF_LIFE: u32 = 42; //no fixed adress
+static mut Z: i32 = 128;
+
 fn operators() {
     let mut a = 2 + 3 * 4;
     println!("{}", a);
@@ -86,4 +89,9 @@ fn fundamental_data_types() {
 
 fn main() {
     scope_and_shadowing();
+    println!("{}", MEANING_OF_LIFE);
+    unsafe {
+        Z = 777;
+        println!("{}", Z);
+    }
 }
