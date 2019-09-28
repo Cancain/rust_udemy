@@ -64,7 +64,25 @@ fn while_and_loop() {
     }
 }
 
+fn for_loop() {
+    for x in 1..11 {
+        if x == 3 {
+            continue;
+        }
+
+        if x == 8 {
+            break;
+        }
+        println!("x = {}", x);
+    }
+
+    for (i, val) in (30..41).enumerate() {
+        println!("{}: {}", i, val);
+    }
+}
+
 fn main() {
-    while_and_loop();
+    for_loop();
+    // while_and_loop();
     // if_statement();
 }
